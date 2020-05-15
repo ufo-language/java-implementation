@@ -1,0 +1,105 @@
+_TZ_=US/Eastern
+
+# Error messages
+ArgumentMismatch=Parameter/argument mismatch: %s / %s
+#ArgsNotAList=Supplied arguments are not a list: %s
+BindingMismatch=Binding mis-match: %s / %s
+IllegalBinOpArguments=Illegal arguments to operator: %s %s %s
+IllegalUnOpArguments=Illegal arguments to operator: %s %s
+IndexOutOfBounds=Index %s is out of bounds for %s '%s'
+KeyNotFound=%s key '%s' not found in %s %s
+MethodNotFound=Method '%s' not found in class %s
+NotAnAbstraction=Object is neither a function nor a macro: %s
+ObjectNotAssignable=%s %s is not assignable
+ObjectNotCollection=%s '%s' is not a collection
+ObjectNotIndexable=%s '%s' is not indexable
+ObjectStackEmpty=Evaluator object stack is empty (this should not happen)
+QueueEmpty=Queue empty
+StackEmpty=Stack empty
+ThreadError=The requested thread is in an error state: %s
+TypeCheckFailure=The object %s does not have the required type: %s
+TypeConversionFailure=Unable to convert %s to type %s
+UnboundIdentifier=Unbound identifier: '%s'
+
+# data class type names
+D_Array=Array
+D_Binding=Binding
+D_Boolean=Boolean
+D_Closure=Closure
+D_Exception=Exception
+D_File=File
+D_HashTable=HashTable
+D_Integer=Integer
+D_List=List
+D_Method=Method
+D_Nil=Nil
+D_PrimFunction=Primitive
+D_PrimMacro=Primitive
+D_Queue=Queue
+D_Real=Real
+D_SeqInteger=Seq
+D_SeqReal=Seq
+D_Set=Set
+D_Stack=Stack
+D_String=String
+D_StringReader=StringReader
+D_Symbol=Symbol
+D_Term=Term
+
+# evaluator class type name
+Evaluator=Evaluator
+
+# expr class type names
+E_Abstraction=Abstraction
+E_Application=Application
+E_Async=Async
+E_Cobegin=Cobegin
+E_Identifier=Identifier
+E_If=If
+E_InfixExpr=InfixExpression
+E_Let=Let
+E_LetIn=LetIn
+E_Loop=Loop
+E_Nondet=Nondet
+E_PrefixExpression=PrefixExpression
+E_Quote=Quote
+E_Do=Do
+E_Subscript=Subscript
+E_While=While
+
+# Deprecated (lexer is now Antlr)
+# lexer reserved words
+#and=and
+#async=async
+# Finish the others. See src/main/java/lexer/TokenTypes.java
+
+# Deprecated (lexer is now Antlr)
+# lexer token types
+#Boolean=Boolean
+#Int=Int
+# Finish the others. See src/main/java/lexer/TokenTypes.java
+
+# Deprecated (lexer is now Antlr)
+# lexer token values
+#true=true
+#false=false
+#nothing=nothing
+
+# Deprecated (lexer is now Antlr)
+# lexer errors
+#LexUntermString=Unterminated string starting at position %s: %s...
+#LexUntermBackQuote=Unterminated back-quote starting at position %s: %s...
+
+# Deprecated (parser is now Antlr)
+# parser errors
+#BindingExpected=Binding expected
+#HashParseError=Binding or closing brace expected
+#KeywordEndExpected=Keyword 'end' expected
+#ParseError=Don't do that
+
+# Deprecated (lexer is now Antlr)
+# D_StringReader uses these
+#Name=Name
+#Pos=Pos
+#Line=Line
+#Col=Col

@@ -1,0 +1,6 @@
+#!/bin/sh
+alias antlr='java -jar /usr/local/lib/antlr-4.8-complete.jar'
+#antlr -Dlanguage=Python3 -visitor UFO.g4
+#antlr -Dlanguage=Python3 -no-listener -visitor UFO.g4
+antlr -visitor UFO.g4
+
