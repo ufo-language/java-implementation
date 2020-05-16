@@ -419,6 +419,8 @@ Error message and password prompt
 
 <li>$:/state/toc/Contents/Reference-Reference: Operators-209360082</li>
 
+<li>$:/state/toc/Contents/Reference-Reference: Writing programs-209360082</li>
+
 <li>$:/state/toc/Contents/Reference/Data type-Data type: Atomic-209360082</li>
 
 <li>$:/state/toc/Contents/Reference/Data type-Data type: Collection-209360082</li>
@@ -476,6 +478,8 @@ Error message and password prompt
 <li>$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: string-209360082</li>
 
 <li>$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: term-209360082</li>
+
+<li>$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: type-209360082</li>
 
 <li>$:/state/toc/Contents/Writing programs-Writing programs: Time complexity-209360082</li>
 
@@ -1371,7 +1375,9 @@ Error message and password prompt
 
 <li>Primitive: type:convert</li>
 
-<li>Primitive: type.name</li>
+<li>Primitive: type:hasType</li>
+
+<li>Primitive: type:name</li>
 
 <li>Reference</li>
 
@@ -1385,7 +1391,9 @@ Error message and password prompt
 
 <li>Reference: Operator</li>
 
-<li>Release: 3.0.0 rc-1</li>
+<li>Reference: Writing programs</li>
+
+<li>Release: 3-rc-1</li>
 
 <li>tc-vertical-643967421</li>
 
@@ -1605,8 +1613,6 @@ Error message and password prompt
 
 <li>UFO cmd prompt.png</li>
 
-<li>Writing programs</li>
-
 <li>Writing programs: Anonymous identifier</li>
 
 <li>Writing programs: Associative collections</li>
@@ -1664,6 +1670,8 @@ Error message and password prompt
 <li>Writing programs: Time complexity: Quasilinear</li>
 
 <li>Writing programs: Type conversion</li>
+
+<li>Writing programs: Types</li>
 
 <li>Writing programs: Value and expression</li>
 
@@ -10721,10 +10729,10 @@ exports.parse = function() {
 <div created="20200427150038301" modified="20200501232444771" title="$:/state/tab-643967421">
 <pre>Type conversion: Array</pre>
 </div>
-<div created="20181029204241734" modified="20200511023033226" title="$:/state/tab/moresidebar-401116514">
+<div created="20181029204241734" modified="20200516101222462" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20181029204240462" modified="20200514115250062" title="$:/state/tab/sidebar--1835078512">
+<div created="20181029204240462" modified="20200516101223094" title="$:/state/tab/sidebar--1835078512">
 <pre>Contents</pre>
 </div>
 <div created="20181029204303296" modified="20181110112501761" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10775,7 +10783,7 @@ exports.parse = function() {
 <div created="20200422113014609" modified="20200430121657874" title="$:/state/toc/Contents-About-1637712383">
 <pre>close</pre>
 </div>
-<div created="20200422112929088" modified="20200516030157858" title="$:/state/toc/Contents-About-209360082">
+<div created="20200422112929088" modified="20200516100359831" title="$:/state/toc/Contents-About-209360082">
 <pre>close</pre>
 </div>
 <div created="20200420131415123" modified="20200426100023150" title="$:/state/toc/Contents-Data type-1637712383">
@@ -10808,13 +10816,13 @@ exports.parse = function() {
 <div created="20200420131914859" modified="20200511155545132" title="$:/state/toc/Contents-Namespace-209360082">
 <pre>close</pre>
 </div>
-<div created="20200511155546467" modified="20200516030658249" title="$:/state/toc/Contents-Reference-209360082">
+<div created="20200511155546467" modified="20200516101226710" title="$:/state/toc/Contents-Reference-209360082">
 <pre>close</pre>
 </div>
 <div created="20200508153655517" modified="20200508153656118" title="$:/state/toc/Contents-Releases-209360082">
 <pre>close</pre>
 </div>
-<div created="20200428135709976" modified="20200516025441429" title="$:/state/toc/Contents-Tutorial-209360082">
+<div created="20200428135709976" modified="20200516100146571" title="$:/state/toc/Contents-Tutorial-209360082">
 <pre>close</pre>
 </div>
 <div created="20200428103822478" modified="20200428103823398" title="$:/state/toc/Contents-Writing programs--1170311418">
@@ -10823,8 +10831,8 @@ exports.parse = function() {
 <div created="20200420130708174" modified="20200430124215320" title="$:/state/toc/Contents-Writing programs-1637712383">
 <pre>close</pre>
 </div>
-<div created="20200424210153397" modified="20200516025442476" title="$:/state/toc/Contents-Writing programs-209360082">
-<pre>close</pre>
+<div created="20200424210153397" modified="20200516100141811" title="$:/state/toc/Contents-Writing programs-209360082">
+<pre>open</pre>
 </div>
 <div created="20200508154329665" modified="20200515013142992" title="$:/state/toc/Contents/About-About: Releases-209360082">
 <pre>open</pre>
@@ -10943,22 +10951,25 @@ exports.parse = function() {
 <div created="20200512015739183" modified="20200512124845876" title="$:/state/toc/Contents/Reference-Operator-209360082">
 <pre>close</pre>
 </div>
-<div created="20200513222724778" modified="20200513234839643" title="$:/state/toc/Contents/Reference-Reference: Colon command-209360082">
+<div created="20200513222724778" modified="20200516094337377" title="$:/state/toc/Contents/Reference-Reference: Colon command-209360082">
 <pre>close</pre>
 </div>
 <div created="20200514013230167" modified="20200516030323437" title="$:/state/toc/Contents/Reference-Reference: Data type-209360082">
 <pre>close</pre>
 </div>
-<div created="20200513235027862" modified="20200516030345875" title="$:/state/toc/Contents/Reference-Reference: Expression-209360082">
-<pre>open</pre>
-</div>
-<div created="20200513234901986" modified="20200516030250837" title="$:/state/toc/Contents/Reference-Reference: Namespace-209360082">
+<div created="20200513235027862" modified="20200516094249704" title="$:/state/toc/Contents/Reference-Reference: Expression-209360082">
 <pre>close</pre>
 </div>
-<div created="20200514000733273" modified="20200516030309236" title="$:/state/toc/Contents/Reference-Reference: Operator-209360082">
+<div created="20200513234901986" modified="20200516095920430" title="$:/state/toc/Contents/Reference-Reference: Namespace-209360082">
+<pre>close</pre>
+</div>
+<div created="20200514000733273" modified="20200516095918175" title="$:/state/toc/Contents/Reference-Reference: Operator-209360082">
 <pre>close</pre>
 </div>
 <div created="20200511155547844" modified="20200511155551045" title="$:/state/toc/Contents/Reference-Reference: Operators-209360082">
+<pre>close</pre>
+</div>
+<div created="20200516100822399" modified="20200516101224478" title="$:/state/toc/Contents/Reference-Reference: Writing programs-209360082">
 <pre>close</pre>
 </div>
 <div created="20200513032900367" modified="20200513105433381" title="$:/state/toc/Contents/Reference/Data type-Data type: Atomic-209360082">
@@ -10988,7 +10999,7 @@ exports.parse = function() {
 <div created="20200514013232335" modified="20200516030321967" title="$:/state/toc/Contents/Reference/Reference: Data type-Data type: Collection-209360082">
 <pre>close</pre>
 </div>
-<div created="20200514151636580" modified="20200514182102167" title="$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: any-209360082">
+<div created="20200514151636580" modified="20200516094553732" title="$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: any-209360082">
 <pre>close</pre>
 </div>
 <div created="20200514151638308" modified="20200514182216905" title="$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: array-209360082">
@@ -11046,6 +11057,9 @@ exports.parse = function() {
 <pre>close</pre>
 </div>
 <div created="20200514175305518" modified="20200514194134121" title="$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: term-209360082">
+<pre>close</pre>
+</div>
+<div created="20200516094555571" modified="20200516095916246" title="$:/state/toc/Contents/Reference/Reference: Namespace-Namespace: type-209360082">
 <pre>close</pre>
 </div>
 <div created="20200509131044677" modified="20200515125254787" title="$:/state/toc/Contents/Writing programs-Writing programs: Time complexity-209360082">
@@ -11742,7 +11756,7 @@ exports.parse = function() {
 <div created="20181029204348832" modified="20181029204348832" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
 <pre>yes</pre>
 </div>
-<div created="20200422112852993" modified="20200516030706742" tags="Contents" title="About">
+<div created="20200422112852993" modified="20200516100513208" tags="Contents" title="About">
 <pre>Jump to the [[Quick start|About: Quick start]] guide If you're impatient and already have programming experience.
 
 !About UFO
@@ -11762,14 +11776,14 @@ exports.parse = function() {
 ; [[Tutorial]]
 : Follow the sections in order to learn how to program in UFO.
 
-; [[Writing programs]]
+; [[Writing programs|Reference: Writing programs]]
 : Each section describes a feature of UFO.
 
 ; [[Examples]]
 : Example UFO programs.
 
 ; [[Reference]]
-: A complete guide to every [[Data type]], [[Expression]], [[Operator]], and [[Namespace]] in UFO.</pre>
+: A complete guide to every [[data type|Reference: Data type]], [[expression|Reference: Expression]], [[operator|Reference: Operator]], and [[namespace|Reference: Namespace]] in UFO.</pre>
 </div>
 <div caption="Design rationale" created="20200510134935007" modified="20200515005642306" tags="todo About" title="About: Design rationale">
 <pre>I wanted to create a language that had all the features I liked of other languages, while trying to avoid characteristics of other languages that I didn't like.
@@ -11981,19 +11995,19 @@ See: [[Expression: loop]], [[Expression: while]]
 !More
 See the [[Reference]] sections.</pre>
 </div>
-<div caption="Releases" created="20200508135130930" modified="20200512153140694" tags="About" title="About: Releases">
+<div caption="Releases" created="20200508135130930" modified="20200516100743536" tags="About" title="About: Releases">
 <pre>|!Version |!Date |!Notes |
-|[[3.0.0 rc-1|Release: 3.0.0 rc-1]] |2020-05-08 |First public release of major version 3 |</pre>
+|[[3-rc-1|Release: 3-rc-1]] |2020-05-15 |First public release of major version 3 on [[GitHub|https://github.com/ufo-language]] |</pre>
 </div>
-<div caption="This document" created="20200428103840251" modified="20200510110801236" tags="About" title="About: This document">
+<div caption="This document" created="20200428103840251" modified="20200516100608411" tags="About" title="About: This document">
 <pre>!Organization
 The menu on the right shows all the sections of the document.
 
 In order to start learning UFO you should read the [[Tutorial]].
 
-Reference information can be found in either the [[Data type]], [[Expression]], or [[Namespace]] sections.
+Reference information can be found in either the [[data type|Reference: Data type]], [[expression|Reference: Expression]], or [[namespace|Reference: Namespace]] sections.
 
-Details about writing programs for UFO can be found in [[Writing programs]].
+Details about writing programs for UFO can be found in [[writing programs|Reference: Writing programs]].
 
 !Don't drown in the river
 This document is a [[TiddlyWiki|https://tiddlywiki.com/]] file. Using it comfortably might take a bit of practice.
@@ -13791,7 +13805,7 @@ UFO&gt; lst[B] := 99
 * [[Writing programs: Associative collections]]
 * [[Writing programs: Destructive modification]]</pre>
 </div>
-<div caption=": (colon)" created="20200507103109460" list="" modified="20200513222140412" tags="[[Operator: Other]] [[Reference: Operator]]" title="Operator: Colon">
+<div caption=": (colon)" created="20200507103109460" list="" modified="20200516101150046" tags="[[Operator: Other]] [[Reference: Operator]]" title="Operator: Colon">
 <pre>!Description
 The colon operator `:` retrieves the value of a key in an indexable collection. This operator does not evaluate the right-hand index expression.
 
@@ -13818,7 +13832,7 @@ UFO&gt; h:b
 * [[Expression: Subscript]]
 * [[Operator: Dot]]
 * [[Writing programs: Element resolution]]
-* [[Writing programs: Methods are functions]]</pre>
+* [[Writing programs: Functions and methods]]</pre>
 </div>
 <div caption="Comparison" created="20200509012444775" list="" modified="20200513222140412" tags="[[Reference: Operator]]" title="Operator: Comparison">
 <pre>&lt;&lt;explist $(currentTiddler)$&gt;&gt;</pre>
@@ -13874,7 +13888,7 @@ UFO&gt; 5.0 &amp;#47;&amp;#47; 2
 * [[Operator: Arithmetic]]
 * [[Operator: Divide]]</pre>
 </div>
-<div caption=". (dot)" created="20200418211254728" list="" modified="20200514000944750" tags="[[Operator: Other]] [[Reference: Operator]]" title="Operator: Dot">
+<div caption=". (dot)" created="20200418211254728" list="" modified="20200516101200320" tags="[[Operator: Other]] [[Reference: Operator]]" title="Operator: Dot">
 <pre>!Description
 The dot operator `.` converts a function into a method bound to a receiver.
 
@@ -13897,9 +13911,9 @@ UFO&gt; a.reverse()
 * [[Expression: Subscript]]
 * [[Operator: Colon]]
 * [[Writing programs: Element resolution]]
-* [[Writing programs: Methods are functions]]</pre>
+* [[Writing programs: Functions and methods]]</pre>
 </div>
-<div caption="== (equal to)" created="20200503095753773" list="" modified="20200513222140412" tags="[[Operator: Comparison]] [[Reference: Operator]]" title="Operator: Equal to">
+<div caption="== (equal to)" created="20200503095753773" list="" modified="20200516101110149" tags="[[Operator: Comparison]] [[Reference: Operator]]" title="Operator: Equal to">
 <pre>!Description
 Compare two values for equality.
 
@@ -13924,7 +13938,7 @@ Be aware that comparison of different data types for equality have different tim
 |Stack |[[O(n)|Writing programs: Time complexity: Linear]] |
 |Term |[[O(n)|Writing programs: Time complexity: Linear]] |
 
-^^(*)^^ Be aware that the time complexities shown are for //simple// collections that do not contain other collections. If you were to compare, for example, a //list of lists//, then the time complexity would actually be [[quadratic|Writing programs: Time complexity: Quadratic]].
+^^(*)^^ Also be aware that the time complexities shown are for //simple// collections that do not contain other collections. If you were to compare, for example, a //list of lists//, then the time complexity could actually approach [[quadratic|Writing programs: Time complexity: Quadratic]].
 
 !Format
 %%%
@@ -13955,7 +13969,7 @@ true :: Boolean
 
 !See also
 * [[Operator: Is]]
-* [[Writing programs: Equality and identity]]</pre>
+* [[Writing programs: Equality vs. identity]]</pre>
 </div>
 <div caption="&gt; (greater than)" created="20200514120731231" list="" modified="20200514123823242" tags="[[Operator: Comparison]] [[Reference: Operator]]" title="Operator: Greater than">
 <pre>!Description
@@ -14025,7 +14039,7 @@ false :: Boolean
 * [[Operator: Comparison]]
 * [[Writing programs: Comparing values]]</pre>
 </div>
-<div caption="is" created="20200426095329123" list="" modified="20200513222140412" tags="[[Operator: Comparison]] [[Reference: Operator]]" title="Operator: Is">
+<div caption="is" created="20200426095329123" list="" modified="20200516101124581" tags="[[Operator: Comparison]] [[Reference: Operator]]" title="Operator: Is">
 <pre>!Description
 Checks the identity of two objects.
 
@@ -14060,7 +14074,7 @@ false :: Boolean
 !See also
 * [[Operator: Equal to]]
 * [[Operator: Is not]]
-* [[Writing programs: Equality and identity]]</pre>
+* [[Writing programs: Equality vs. identity]]</pre>
 </div>
 <div caption="isnot" created="20200507114311513" list="" modified="20200513222140412" tags="[[Operator: Comparison]] [[Reference: Operator]]" title="Operator: Is not">
 <pre>!Description
@@ -15622,7 +15636,7 @@ UFO&gt; 1.to(10, 2)
 * [[Data type: Integer]]
 * [[Data type: Seq]]</pre>
 </div>
-<div caption="disp" created="20200420131123272" modified="20200427120945944" tags="[[Namespace: io]]" title="Primitive: io:disp">
+<div caption="disp" created="20200420131123272" modified="20200516100830280" tags="[[Namespace: io]]" title="Primitive: io:disp">
 <pre>!Description
 Displays the arguments by sending them to the standard output stream.
 
@@ -15642,9 +15656,9 @@ AbcDef
 %%%
 
 !See also
-* [[Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
-<div caption="displn" created="20200420131220745" modified="20200427121019168" tags="[[Namespace: io]]" title="Primitive: io:displn">
+<div caption="displn" created="20200420131220745" modified="20200516100843664" tags="[[Namespace: io]]" title="Primitive: io:displn">
 <pre>!Description
 Displays the arguments by sending them to the standard output stream, followed by a newline.
 
@@ -15664,9 +15678,9 @@ Abc123
 %%%
 
 !See also
-* [[Display and show|Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
-<div caption="dispString" created="20200420201138835" modified="20200427120952809" tags="[[Namespace: io]]" title="Primitive: io:dispString">
+<div caption="dispString" created="20200420201138835" modified="20200516100852712" tags="[[Namespace: io]]" title="Primitive: io:dispString">
 <pre>!Description
 Returns a string which is the result of calling `display` on each argument.
 
@@ -15686,7 +15700,7 @@ UFO&gt; io:dispString(&quot;Abc&quot;, &quot;123&quot;)
 %%%
 
 !See also
-* [[Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
 <div caption="fmt" created="20200428101323393" modified="20200508193644051" tags="[[Namespace: io]]" title="Primitive: io:fmt">
 <pre>!Description
@@ -15746,7 +15760,7 @@ Enter a number: __123__
 !See also
 * [[Data type: String]]</pre>
 </div>
-<div caption="show" created="20200420125455836" modified="20200427121405824" tags="[[Namespace: io]]" title="Primitive: io:show">
+<div caption="show" created="20200420125455836" modified="20200516100901393" tags="[[Namespace: io]]" title="Primitive: io:show">
 <pre>!Description
 Shows the arguments by sending them to the standard output stream.
 
@@ -15766,9 +15780,9 @@ UFO&gt; io:show(&quot;Abc&quot;, &quot;123&quot;)
 %%%
 
 !See also
-* [[Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
-<div caption="showln" created="20200420131008454" modified="20200509184514554" tags="[[Namespace: io]]" title="Primitive: io:showln">
+<div caption="showln" created="20200420131008454" modified="20200516100906881" tags="[[Namespace: io]]" title="Primitive: io:showln">
 <pre>!Description
 Shows the arguments by sending them to the standard output stream, followed by a newline.
 
@@ -15788,9 +15802,9 @@ UFO&gt; io:showln(&quot;Abc&quot;, &quot;123&quot;)
 %%%
 
 !See also
-* [[Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
-<div caption="showString" created="20200420201406607" modified="20200427121340177" tags="[[Namespace: io]]" title="Primitive: io:showString">
+<div caption="showString" created="20200420201406607" modified="20200516100912408" tags="[[Namespace: io]]" title="Primitive: io:showString">
 <pre>!Description
 Returns a string which is the result of calling `show` on each argument.
 
@@ -15810,7 +15824,7 @@ UFO&gt; io:showString(&quot;Abc&quot;, &quot;123&quot;)
 %%%
 
 !See also
-* [[Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
 <div caption="accept" created="20200429120240568" modified="20200514232301140" tags="[[Namespace: list]]" title="Primitive: list:accept">
 <pre>!Description
@@ -16215,7 +16229,7 @@ UFO&gt; list:reverse([A, B, C, D, E])
 !See also
 * [[Data type: List]]</pre>
 </div>
-<div caption="setFirst!" created="20200429121614225" modified="20200514155029111" tags="[[Namespace: list]]" title="Primitive: list:setFirst!">
+<div caption="setFirst!" created="20200429121614225" modified="20200516100803934" tags="[[Namespace: list]]" title="Primitive: list:setFirst!">
 <pre>!Description
 Replaces the first element of a list with a new value. Also returns the list.
 
@@ -16234,9 +16248,9 @@ UFO&gt; list:setFirst!([A, B, C], Z)
 
 !See also
 * [[Data type: List]]
-* [[Primitive: list:setRest]]</pre>
+* [[Primitive: list:setRest!]]</pre>
 </div>
-<div caption="setRest" created="20200429121837260" modified="20200514155123298" tags="[[Namespace: list]]" title="Primitive: list:setRest!">
+<div caption="setRest" created="20200429121837260" modified="20200516100757604" tags="[[Namespace: list]]" title="Primitive: list:setRest!">
 <pre>!Description
 Replaces the //rest// of a list with a new value. Also returns the list.
 
@@ -16255,7 +16269,7 @@ UFO&gt; list:setRest!([A, B, C], [Y, Z])
 
 !See also
 * [[Data type: List]]
-* [[Primitive: list:setFirst]]</pre>
+* [[Primitive: list:setFirst!]]</pre>
 </div>
 <div caption="take" created="20200429121453773" modified="20200429121559354" tags="[[Namespace: list]]" title="Primitive: list:take">
 <pre>!Description
@@ -18236,18 +18250,46 @@ UFO&gt; type:convert({A, B, C}, List)
 * [[:? (type predicate)|Operator: Type predicate]]
 * [[Writing programs: Type conversion]]</pre>
 </div>
-<div caption="name" created="20200426112217873" modified="20200428132817903" tags="[[Namespace: type]]" title="Primitive: type.name">
+<div caption="hasType" created="20200516095756567" modified="20200516095910410" tags="[[Namespace: type]]" title="Primitive: type:hasType">
+<pre>!Description
+Determines if an object is a member of the specified type. Returns `true` on success or `false` on failure.
+
+!Format
+%%%
+type:hasType(//obj// :: any, //typeName// :: Symbol) :: Boolean
+%%%
+
+!Examples
+%%%
+UFO&gt; type:check(123, Integer)
+true :: Boolean
+%%%
+%%%
+UFO&gt; type:check(123, Symbol)
+false :: Boolean
+%%%
+%%%
+UFO&gt; type:check(pi, type.name(1.0))
+true :: Boolean
+%%%
+
+!See also
+* [[:: (type check)|Operator: Type check]]
+* [[:&gt; (type convert)|Operator: Type convert]]
+* [[:? (type predicate)|Operator: Type predicate]]</pre>
+</div>
+<div caption="name" created="20200426112217873" modified="20200516094626085" tags="[[Namespace: type]]" title="Primitive: type:name">
 <pre>!Description
 Determines the type name of an object.
 
 !Format
 %%%
-type.name(//obj// :: any) :: Symbol
+type:name(//obj// :: any) :: Symbol
 %%%
 
 !Examples
 %%%
-UFO&gt; type.name(123)
+UFO&gt; type:name(123)
 Integer :: Symbol
 %%%
 
@@ -18259,8 +18301,10 @@ Integer :: Symbol
 <div created="20200511155453978" modified="20200511155504218" tags="Contents" title="Reference">
 <pre>&lt;&lt;explist $(currentTiddler)$&gt;&gt;</pre>
 </div>
-<div bag="default" caption="Colon command" created="20200513222230607" creator="Jeff Meunier" modified="20200513234547782" modifier="Jeff Meunier" revision="2" tags="Reference" title="Reference: Colon command" type="text/vnd.tiddlywiki">
-<pre>|`:?` |[[Help|Colon command :? Help]] |
+<div bag="default" caption="Colon command" created="20200513222230607" creator="Jeff Meunier" modified="20200516094312301" modifier="Jeff Meunier" revision="2" tags="Reference" title="Reference: Colon command" type="text/vnd.tiddlywiki">
+<pre>These are some commands that the UFO command shell understands.
+
+|`:?` |[[Help|Colon command :? Help]] |
 |`:cav` |[[Caveats|Colon command :cav Caveats]] |
 |`:d` |[[Toggle debug|Colon command :d Toggle debug]] |
 |`:e` |[[Enter multiple lines|Colon command :e Enter multiple lines]] |
@@ -18300,7 +18344,10 @@ Integer :: Symbol
 !!Other
 &lt;&lt;explist &quot;Operator: Other&quot;&gt;&gt;</pre>
 </div>
-<div caption="rc-3.0.0" created="20200508135809925" list="" modified="20200515210358664" tags="[[About: Releases]]" title="Release: 3.0.0 rc-1">
+<div bag="default" caption="Writing programs" created="20200418204729978" creator="Jeff Meunier" modified="20200516100343639" modifier="Jeff Meunier" revision="1" tags="Reference" title="Reference: Writing programs" type="text/vnd.tiddlywiki">
+<pre>&lt;&lt;explist $(currentTiddler)$&gt;&gt;</pre>
+</div>
+<div caption="3-rc-1" created="20200508135809925" list="" modified="20200516100023832" tags="[[About: Releases]]" title="Release: 3-rc-1">
 <pre>!About
 This is the first public release of UFO version 3.
 
@@ -18311,7 +18358,7 @@ This is the first public release of UFO version 3.
 * Lots of [[expressions|Reference: Expression]]
 * Lots of [[built-in functions|Reference: Namespace]]
 * [[Recursion|Writing programs: Recursion and tail recursion]]
-* [[Function memoization|Writing programs: Function memoization]]
+* [[Function memoization|Writing programs: Memoization]]
 * Several forms of [[concurrency|Writing programs: Concurrency]]
 
 !Issues
@@ -20052,7 +20099,7 @@ stack(A, B, C) :: Stack
 * [[Data type: Array]]
 * [[Data type: Stack]]</pre>
 </div>
-<div caption="to String" created="20200427151234510" modified="20200427160416040" tags="[[Type conversion: Array]]" title="Type conversion: Array to String">
+<div caption="to String" created="20200427151234510" modified="20200516100919001" tags="[[Type conversion: Array]]" title="Type conversion: Array to String">
 <pre>The array is converted to a string, which is the simple concatenation of the [[dispStrings|Primitive: io:dispString]] of each element in the array.
 
 %%%
@@ -20067,7 +20114,7 @@ UFO&gt; type:convert({&quot;A&quot;, &quot;B&quot;, &quot;C&quot;}, String)
 !!See also
 * [[Data type: Array]]
 * [[Data type: String]]
-* [[Writing programs: Display and show]]
+* [[Writing programs: Display vs. show]]
 
 </pre>
 </div>
@@ -20396,7 +20443,7 @@ stack(A, B, C) :: Stack
 * [[Data type: List]]
 * [[Data type: Stack]]</pre>
 </div>
-<div caption="to String" created="20200427191338986" modified="20200427192625144" tags="[[Type conversion: List]]" title="Type conversion: List to String">
+<div caption="to String" created="20200427191338986" modified="20200516100939642" tags="[[Type conversion: List]]" title="Type conversion: List to String">
 <pre>The list is converted to a string, which is the simple concatenation of the [[dispStrings|Primitive: io:dispString]] of each element in the list.
 
 %%%
@@ -20411,9 +20458,7 @@ UFO&gt; type:convert([&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], String)
 !!See also
 * [[Data type: List]]
 * [[Data type: String]]
-* [[Writing programs: Display and show]]
-
-</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
 <div caption="Queue" created="20200427192126446" modified="20200427192134522" tags="[[Type conversion]]" title="Type conversion: Queue">
 <pre>&lt;&lt;tabs &quot;[tag[Type conversion: Queue]]&quot;&gt;&gt;</pre>
@@ -20494,7 +20539,7 @@ stack(A, B, C) :: Stack
 * [[Data type: Queue]]
 * [[Data type: Stack]]</pre>
 </div>
-<div caption="to String" created="20200427192618217" modified="20200427192650295" tags="[[Type conversion: Queue]]" title="Type conversion: Queue to String">
+<div caption="to String" created="20200427192618217" modified="20200516100935770" tags="[[Type conversion: Queue]]" title="Type conversion: Queue to String">
 <pre>The queue is converted to a string, which is the simple concatenation of the [[dispStrings|Primitive: io:dispString]] of each element in the queue.
 
 %%%
@@ -20509,9 +20554,7 @@ UFO&gt; type:convert(~[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], String)
 !!See also
 * [[Data type: Queue]]
 * [[Data type: String]]
-* [[Writing programs: Display and show]]
-
-</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
 <div caption="Real" created="20200427192727396" modified="20200427192959125" tags="[[Type conversion]]" title="Type conversion: Real">
 <pre>&lt;&lt;tabs &quot;[tag[Type conversion: Real]]&quot;&gt;&gt;</pre>
@@ -20702,7 +20745,7 @@ Note that a set contains no internal ordering, so the elements in the stack may 
 * [[Data type: Set]]
 * [[Data type: Stack]]</pre>
 </div>
-<div caption="to String" created="20200427195722555" modified="20200427200042909" tags="[[Type conversion: Set]]" title="Type conversion: Set to String">
+<div caption="to String" created="20200427195722555" modified="20200516100947002" tags="[[Type conversion: Set]]" title="Type conversion: Set to String">
 <pre>The set is converted to a string, which is the simple concatenation of the [[dispStrings|Primitive: io:dispString]] of each element in the set.
 
 %%%
@@ -20719,7 +20762,7 @@ Note that a set contains no internal ordering, so the characters in the string m
 !!See also
 * [[Data type: Set]]
 * [[Data type: String]]
-* [[Writing programs: Display and show]]</pre>
+* [[Writing programs: Display vs. show]]</pre>
 </div>
 <div caption="Stack" created="20200427200519518" modified="20200427200528684" tags="[[Type conversion]]" title="Type conversion: Stack">
 <pre>&lt;&lt;tabs &quot;[tag[Type conversion: Stack]]&quot;&gt;&gt;</pre>
@@ -20788,7 +20831,7 @@ Note that a set contains no internal ordering, so the elements in the set may no
 * [[Data type: List]]
 * [[Data type: Set]]</pre>
 </div>
-<div caption="to String" created="20200427201111546" modified="20200427201145993" tags="[[Type conversion: Stack]]" title="Type conversion: Stack to String">
+<div caption="to String" created="20200427201111546" modified="20200516100954577" tags="[[Type conversion: Stack]]" title="Type conversion: Stack to String">
 <pre>The stack is converted to a string, which is the simple concatenation of the [[dispStrings|Primitive: io:dispString]] of each element in the stack.
 
 %%%
@@ -20803,7 +20846,7 @@ UFO&gt; type:convert(stack.new(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;), Str
 !!See also
 * [[Data type: Stack]]
 * [[Data type: String]]
-* [[Writing programs: Display and show]]
+* [[Writing programs: Display vs. show]]
 
 </pre>
 </div>
@@ -20945,10 +20988,7 @@ stack(Abc, {D, &quot;efg&quot;}, true, 123) :: Stack
 <div title="UFO cmd prompt.png" type="image/png">
 <pre>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</pre>
 </div>
-<div bag="default" created="20200418204729978" creator="Jeff Meunier" modified="20200418211547477" modifier="Jeff Meunier" revision="1" tags="Contents" title="Writing programs" type="text/vnd.tiddlywiki">
-<pre>&lt;&lt;explist $(currentTiddler)$&gt;&gt;</pre>
-</div>
-<div caption="Anonymous identifier" created="20200430202927044" modified="20200430203832371" tags="[[Writing programs]]" title="Writing programs: Anonymous identifier">
+<div caption="Anonymous identifier" created="20200430202927044" list="" modified="20200516100328734" tags="[[Reference: Writing programs]]" title="Writing programs: Anonymous identifier">
 <pre>An identifier that starts with an underscore is //anonymous//. That means that it will not be defined anywhere it's used. These are some valid anonymous identifiers:
 
 %%%
@@ -20987,7 +21027,7 @@ fun repeat(0, _doSomething) = nil
 end
 %%%</pre>
 </div>
-<div caption="Associative collections" created="20200422221746192" modified="20200508194813952" tags="[[Writing programs]]" title="Writing programs: Associative collections">
+<div caption="Associative collections" created="20200422221746192" list="" modified="20200516100328734" tags="[[Reference: Writing programs]]" title="Writing programs: Associative collections">
 <pre>An associative collection is one that contains [[bindings|Data type: Binding]], or //mappings// from //key// to //value//.
 
 The [[HashTable|Data type: HashTable]] should be used as the preferred associative collection, as insertion and lookup are both [[constant time|Writing programs: Time complexity: Constant]] operations. Nevertheless, [[Array|Data type: Array]] and [[List|Data type: List]] both support associative lookups.
@@ -21045,7 +21085,7 @@ Time complexity: [[O(n)|Writing programs: Time complexity: Linear]]
 !See also
 * [[Writing programs: Element resolution]]</pre>
 </div>
-<div caption="Boolean equivalence" created="20200429113318387" modified="20200509105610782" tags="[[Writing programs]]" title="Writing programs: Boolean equivalence">
+<div caption="Boolean equivalence" created="20200429113318387" list="" modified="20200516100328734" tags="[[Reference: Writing programs]]" title="Writing programs: Boolean equivalence">
 <pre>Every value in UFO has an intrinsic Boolean value, and as such it can be used as the condition of an `if` statement or `while` loop.
 
 Things that are considered to be `false`:
@@ -21100,14 +21140,14 @@ UFO&gt; while n do io:showln(n); n := n - 1 end
 * [[Expression: if]]
 * [[Expression: while]]</pre>
 </div>
-<div caption="Collections" created="20200427202102812" modified="20200509101547609" tags="todo [[Writing programs]]" title="Writing programs: Collections">
+<div caption="Collections" created="20200427202102812" list="" modified="20200516100328734" tags="todo [[Reference: Writing programs]]" title="Writing programs: Collections">
 <pre>!Collections contain other values
 Array, Binding, HashTable, List, Queue, Seq, Set, Stack, Term
 
 !Collections can contain collections
 </pre>
 </div>
-<div caption="Colon commands" created="20200510123724096" modified="20200510174944500" tags="todo [[Writing programs]]" title="Writing programs: Colon commands">
+<div caption="Colon commands" created="20200510123724096" list="" modified="20200516100328734" tags="todo [[Reference: Writing programs]]" title="Writing programs: Colon commands">
 <pre>%%%
 UFO&gt; :?
   :?            show this help
@@ -21122,7 +21162,7 @@ UFO&gt; :?
   :tb           show traceback from last exception
 %%%</pre>
 </div>
-<div caption="Comments" created="20200514093411783" modified="20200514095304024" tags="[[Writing programs]]" title="Writing programs: Comments">
+<div caption="Comments" created="20200514093411783" list="" modified="20200516100328734" tags="[[Reference: Writing programs]]" title="Writing programs: Comments">
 <pre>Like many programming languages, UFO has two types of comments: line comments and block comments.
 
 !Line comments
@@ -21140,17 +21180,17 @@ The block comment characters are `;-` and `-;`. Everything that appears between 
 ;- Function qsort
  | Performs a Quicksort on a list of numbers.
  | Input:
- |   The input must be a List. Best performance is achieved
- |   when the first element in the list is close to the median of the list.
+ |   The input must be a List. Best performance is achieved when the
+ |   first element in the list is close to the median value of the list.
  | Output:
- |  The return value is a new list with the elements placed in ascending order.
+ |   The return value is a new list with the elements placed in ascending order.
  -;
 fun qsort(...) ...
 %%%
 
 The use of vertical bars `|` in that comment block is stylistic only.</pre>
 </div>
-<div caption="Comparing values" created="20200514121055998" modified="20200514124025681" tags="todo [[Writing programs]]" title="Writing programs: Comparing values">
+<div caption="Comparing values" created="20200514121055998" list="" modified="20200516100328734" tags="todo [[Reference: Writing programs]]" title="Writing programs: Comparing values">
 <pre>Only objects having the same type (with some exceptions) can be compared to each other using the relational comparison operators [[&lt;|Operator: Less than]], [[&lt;=|Operator: Less than or equal]], [[&gt;=|Operator: Greater than or equal]], [[&gt;|Operator: Greater than]].
 
 Types that can be compared:
@@ -21173,7 +21213,7 @@ Types that can be compared:
 !See also
 * [[Operator: Comparison]]</pre>
 </div>
-<div caption="Concurrency" created="20200418211945300" modified="20200508190717176" tags="todo [[Writing programs]]" title="Writing programs: Concurrency">
+<div caption="Concurrency" created="20200418211945300" list="" modified="20200516100328734" tags="todo [[Reference: Writing programs]]" title="Writing programs: Concurrency">
 <pre>Concurrency can be achieved through a number of means:
 
 ; The [[async|Expression: async]] expression
@@ -21193,7 +21233,7 @@ At the present moment, a //thread// is the same as an //evaluator//.
 !Thread communication
 See [[Primitive: thread:send]]</pre>
 </div>
-<div caption="Converting to a String" created="20200427204247357" modified="20200508193753573" tags="[[Writing programs]]" title="Writing programs: Converting to a String">
+<div caption="Converting to a String" created="20200427204247357" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Converting to a String">
 <pre>!io:dispString(_) and io:showString(_)
 This returns the standard human- and machine-readable form of the value. It returns a string that's the same as how the value would be displayed or shown at the UFO command prompt.
 
@@ -21214,14 +21254,14 @@ UFO&gt; type:convert(a, String)
 &quot;ABC&quot; :: String
 %%%</pre>
 </div>
-<div bag="default" caption="Data types" created="20200418210316285" creator="Jeff Meunier" modified="20200428132953681" modifier="Jeff Meunier" revision="2" tags="todo [[Writing programs]]" title="Writing programs: Data types" type="text/vnd.tiddlywiki">
+<div bag="default" caption="Data types" created="20200418210316285" creator="Jeff Meunier" list="" modified="20200516100328735" modifier="Jeff Meunier" revision="2" tags="todo [[Reference: Writing programs]]" title="Writing programs: Data types" type="text/vnd.tiddlywiki">
 <pre>UFO uses strong, dynamic, implicit typing.
 
 * It is //''strong''// because a value of any built-in type in UFO can't be treated as though it were a value of a different type.
 * It is //''dynamic''// because type checking occurs at run-time, not at compile time.
 * It is //''implicit''// because the programmer is not required to specify any type annotation in a program.</pre>
 </div>
-<div caption="Destructive modification" created="20200428120704063" modified="20200512124620264" tags="todo [[Writing programs]]" title="Writing programs: Destructive modification">
+<div caption="Destructive modification" created="20200428120704063" list="" modified="20200516100328735" tags="todo [[Reference: Writing programs]]" title="Writing programs: Destructive modification">
 <pre>''TODO: discuss the issue here''
 
 Caution must be observed when using primitive functions that perform destructive modification on (or //mutate//) a data structure.
@@ -21298,7 +21338,7 @@ Destructive modification of a hash key causes a violation of a hash table invari
 !See also
 * [[Data type: HashTable]]</pre>
 </div>
-<div bag="default" caption="Display vs. show" created="20200418205346857" creator="Jeff Meunier" modified="20200510141434016" modifier="Jeff Meunier" revision="1" tags="[[Writing programs]]" title="Writing programs: Display vs. show" type="text/vnd.tiddlywiki">
+<div bag="default" caption="Display vs. show" created="20200418205346857" creator="Jeff Meunier" list="" modified="20200516100328735" modifier="Jeff Meunier" revision="1" tags="[[Reference: Writing programs]]" title="Writing programs: Display vs. show" type="text/vnd.tiddlywiki">
 <pre>The [[io:disp|Primitive: io:disp]] and [[show|Primitive: io:show]] primitives are both used to display information on the screen. The difference is that [[io:disp|Primitive: io:disp]] is intended to generate human-readable output, while [[io:show|Primitive: io:show]] is intended to generate output that is less human-readable and more [[machine readable|https://en.wikipedia.org/wiki/Machine-readable_data]].
 
 The [[io:disp|Primitive: io:disp]] primitive is most useful for displaying information to a user, while the [[io:show|Primitive: io:show]] primitive is most useful for debugging purposes: it //shows// you what the value of something is.
@@ -21347,7 +21387,7 @@ Abc
 %%%
 </pre>
 </div>
-<div caption="Element resolution" created="20200426025907609" modified="20200515101344022" tags="[[Writing programs]]" title="Writing programs: Element resolution">
+<div caption="Element resolution" created="20200426025907609" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Element resolution">
 <pre>There are two element resolution operators: the colon operator `:` and the bracketed subscript expression `[]`. The key distinctions between them are:
 
 * The [[colon expression|Operator: Colon]] uses the RHS (right-hand side) //verbatim// as the key in a collection. The collection is the value of the LHS (left-hand side).
@@ -21501,7 +21541,7 @@ The expression `h[a]` works only because the identifier `a` evaluates to the sym
 * [[: (colon)|Operator: Colon]]
 * [[Writing programs: Associative collections]]</pre>
 </div>
-<div caption="Equality vs. identity" created="20200426095708894" modified="20200510141458232" tags="[[Writing programs]]" title="Writing programs: Equality vs. identity">
+<div caption="Equality vs. identity" created="20200426095708894" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Equality vs. identity">
 <pre>!The '==' equality operator
 This determines if two values are superficially equal.
 
@@ -21562,7 +21602,7 @@ true :: Boolean
 * [[Operator: Equal to]]
 * [[Operator: Is]]</pre>
 </div>
-<div caption="Everything has a value" created="20200426195751571" modified="20200513025328378" tags="todo [[Writing programs]]" title="Writing programs: Everything has a value">
+<div caption="Everything has a value" created="20200426195751571" list="" modified="20200516100328735" tags="todo [[Reference: Writing programs]]" title="Writing programs: Everything has a value">
 <pre>Similar to many other functional programming languages like Scheme, Lisp, ML, and Haskell, every statement in UFO has a value (either a //return value// or //final value//, however you want to think about it). There is no such thing as `void` like there is in C, C++, or Java.
 
 Consider the `if` statement: it returns the value of the //consequent// (the `then` part) or the //alternate// (the `else` part):
@@ -21622,7 +21662,7 @@ true :: Boolean
 
 //Everything// in UFO has a value.</pre>
 </div>
-<div caption="Functions and methods" created="20200507101357372" modified="20200513023853567" tags="[[Writing programs]]" title="Writing programs: Functions and methods">
+<div caption="Functions and methods" created="20200507101357372" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Functions and methods">
 <pre>Every function in each namespace (with just a few exceptions) can be called either as a function or as a method.
 
 !Review of the colon operator `:`
@@ -21700,7 +21740,7 @@ Namespaces such as `io`, `math`, `namespace`, and `type` have no associated data
 * [[Operator: Colon]]
 * [[Operator: Dot]]</pre>
 </div>
-<div caption="Lexical binding" created="20200428135120300" modified="20200510141239228" tags="[[Writing programs]]" title="Writing programs: Lexical binding">
+<div caption="Lexical binding" created="20200428135120300" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Lexical binding">
 <pre>!In the command shell
 The `let` expression is used to create bindings in the command shell:
 
@@ -21917,7 +21957,7 @@ UFO&gt; i1()
 UFO&gt; i1()
 %%%</pre>
 </div>
-<div caption="Memoization" created="20200515112717492" modified="20200515183722695" tags="[[Writing programs]]" title="Writing programs: Memoization">
+<div caption="Memoization" created="20200515112717492" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Memoization">
 <pre>Normally when a function is called the following things happen in this order:
 
 # parameters and arguments are bound together in an environment local to the function,
@@ -22181,7 +22221,7 @@ UFO&gt; time:elapsed('sum(99)')
 
 That's about 0.000045 seconds.</pre>
 </div>
-<div caption="Namespaces and primitives" created="20200427124150856" modified="20200509183948644" tags="[[Writing programs]]" title="Writing programs: Namespaces and primitives">
+<div caption="Namespaces and primitives" created="20200427124150856" list="" modified="20200516100655120" tags="[[Reference: Writing programs]]" title="Writing programs: Namespaces and primitives">
 <pre>Each //primitive// (or //built-in//) function is contained in a //namespace//.
 
 Each namespace contains a collection of closely related functions. For example, each [[collection data type|Data type: Collection]] has a namespace with a group of primitives that can be called on it.
@@ -22228,9 +22268,9 @@ Hello, World!
 %%%
 
 !See also
-* [[Namespaces|Namespace]]</pre>
+* [[Reference: Namespace]]</pre>
 </div>
-<div caption="Operators =, ==, :=" created="20200510134029879" modified="20200512015841079" tags="[[Writing programs]]" title="Writing programs: Operators =, ==, :=">
+<div caption="Operators =, ==, :=" created="20200510134029879" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Operators =, ==, :=">
 <pre>This explains the differences between the three operators `=`, `==`, and `:=`.
 
 !The '=' operator
@@ -22253,7 +22293,7 @@ This is the //assignment// operator. This assigns (or re-assigns) a value to an 
 
 See [[Operator: Assignment]].</pre>
 </div>
-<div created="20200513235140702" modified="20200513235933498" tags="[[Writing programs]]" title="Writing programs: Operators are identifiers">
+<div created="20200513235140702" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Operators are identifiers">
 <pre>Every operator can also be used as if it were a standard identifier.
 
 %%%
@@ -22271,7 +22311,7 @@ UFO&gt; +(1, 2)
 3 :: Integer
 %%%</pre>
 </div>
-<div caption="Pattern matching" created="20200426010247764" modified="20200510185546934" tags="[[Writing programs]]" title="Writing programs: Pattern matching">
+<div caption="Pattern matching" created="20200426010247764" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Pattern matching">
 <pre>Pattern matching is used in several different places in UFO to bind values to identifiers.
 
 The `let` expression is usually used to bind single identifiers, but pattern matching can be used to bind multiple identifiers at once:
@@ -22342,7 +22382,7 @@ UFO&gt; g(Two)
 
 Pattern matching is an important aspect of writing [[recursive functions|Writing programs: Recursion and tail recursion]].</pre>
 </div>
-<div bag="default" caption="Recursion and tail recursion" created="20200418204911195" creator="Jeff Meunier" modified="20200512163610832" modifier="Jeff Meunier" revision="1" tags="[[Writing programs]]" title="Writing programs: Recursion and tail recursion" type="text/vnd.tiddlywiki">
+<div bag="default" caption="Recursion and tail recursion" created="20200418204911195" creator="Jeff Meunier" list="" modified="20200516100328735" modifier="Jeff Meunier" revision="1" tags="[[Reference: Writing programs]]" title="Writing programs: Recursion and tail recursion" type="text/vnd.tiddlywiki">
 <pre>!Recursion
 Recursion is a situation where a function makes a call to itself, or where a function calls another function that in turn calls the first function. Recursion takes a while to get used to if you're not experienced with it, but it can be an extremely powerful means of programming.
 
@@ -22422,7 +22462,7 @@ end
 !See also
 * [[Example: quicksort]]</pre>
 </div>
-<div caption="Time complexity" created="20200509113201524" modified="20200514194032039" tags="[[Writing programs]]" title="Writing programs: Time complexity">
+<div caption="Time complexity" created="20200509113201524" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Time complexity">
 <pre>!About time complexity
 It's important to understand the //time complexity// of the functions you write in order to avoid unexpected slow-downs as your program becomes more complex, or as the data sets your program uses become larger.
 
@@ -22520,7 +22560,7 @@ This is an operation that takes an amount of time proportional to ''//n// × log
 * https://en.wikipedia.org/wiki/Time_complexity#Quasilinear_time
 </pre>
 </div>
-<div caption="Type conversion" created="20200426123046333" modified="20200510141656542" tags="[[Type conversion]] [[Writing programs]]" title="Writing programs: Type conversion">
+<div caption="Type conversion" created="20200426123046333" list="" modified="20200516100328735" tags="[[Type conversion]] [[Reference: Writing programs]]" title="Writing programs: Type conversion">
 <pre>The conversion of a value to a different data type can be done with either the [[type:convert|Primitive: type:convert]] primitive or the [[:&gt;|Operator: Type convert]] operator.
 
 A collection of any type can be converted to its own type, and doing so makes a shallow copy of that collection.
@@ -22528,12 +22568,42 @@ A collection of any type can be converted to its own type, and doing so makes a 
 Furthermore, the following conversions are supported:
 &lt;&lt;tabs &quot;[[Type conversion: Array]] [[Type conversion: Binding]] [[Type conversion: Boolean]] [[Type conversion: HashTable]] [[Type conversion: Integer]] [[Type conversion: List]] [[Type conversion: Queue]] [[Type conversion: Real]] [[Type conversion: Seq]] [[Type conversion: Set]] [[Type conversion: String]] [[Type conversion: Stack]] [[Type conversion: Symbol]] [[Type conversion: Term]]&quot; &quot;&quot; &quot;&quot; &quot;tc-vertical&quot;&gt;&gt;</pre>
 </div>
-<div caption="Value and expression" created="20200428125306470" modified="20200508194621805" tags="[[Writing programs]]" title="Writing programs: Value and expression">
+<div caption="Types" created="20200516094232116" list="" modified="20200516100328735" tags="[[Reference: Writing programs]]" title="Writing programs: Types">
+<pre>Every value in UFO has a type associated with it.
+
+; Getting a value's type
+: `type:name(x)`
+: Returns a value's type as a [[symbol|Data type: Symbol]].
+
+; Converting to a new type
+: `x :&gt; type`
+: `type:convert(x, type)`
+: Converts `x` to the type specified by `type`, which should be (or evaluate to) a [[symbol|Data type: Symbol]].
+: See: [[Primitive: type:convert]], [[Operator: Type convert]]
+
+; Type check predicate
+: `x :? type`
+: `type:hasType(type)`
+: Checks that `x` has the type specified by `type`, which should be (or evaluate to) a [[symbol|Data type: Symbol]].
+: Returns `true` on success, or `false` on failure.
+: See: [[Primitive: type:hasType]], [[Operator: Type predicate]]
+
+; Type check assertion
+: `x :: type`
+: `type:check(x, type)`
+: Checks that `x` has the type specified by `type`, which should be (or evaluate to) a [[symbol|Data type: Symbol]].
+: Returns `x` on success, or throws a `WrongType` exception on failure.
+: See: [[Primitive: type:check]], [[Operator: Type check]]
+
+!See also
+* [[Writing programs: Type conversion]]</pre>
+</div>
+<div caption="Value and expression" created="20200428125306470" list="" modified="20200516100638948" tags="[[Reference: Writing programs]]" title="Writing programs: Value and expression">
 <pre>!Value
-A value is something that evaluates to a thing of the same type. All the [[atom and collection data types|Data type]] are values.
+A value is something that evaluates to a thing of the same type. All the [[atom and collection data types|Reference: Data type]] are values.
 
 !Expression
-An expression is something that evaluates to a thing of a different type. Any program statement that's not an atom or collection, [[like an `if` statement, `loop` statement, or function application|Expression]].</pre>
+An expression is something that evaluates to a thing of a different type. Any program statement that's not an atom or collection, [[like an `if` statement, `loop` statement, or function application|Reference: Expression]].</pre>
 </div>
 
 </div>
