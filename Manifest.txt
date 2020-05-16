@@ -1,0 +1,8 @@
+Name: ufo
+Specification-Title: UFO
+Specification-Version: 3
+Implementation-Version: 3-rc-1
+Specification-Vender: Jeffrey A. Meunier
+Manifest-Version: 1.0
+Main-Class: main.java.UFO
+Class-Path: ./lib/antlr-runtime-4.8.jar
